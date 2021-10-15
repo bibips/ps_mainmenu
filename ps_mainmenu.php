@@ -96,7 +96,7 @@ class Ps_MainMenu extends Module implements WidgetInterface
             !$this->registerHook('actionObjectProductUpdateAfter') ||
             !$this->registerHook('actionObjectProductDeleteAfter') ||
             !$this->registerHook('actionObjectProductAddAfter') ||
-            !$this->registerHook('categoryUpdate') ||
+            !$this->registerHook('actionCategoryUpdate') ||
             !$this->registerHook('actionShopDataDuplication') ||
             !$this->registerHook('displayTop')) {
             return false;
@@ -986,7 +986,7 @@ class Ps_MainMenu extends Module implements WidgetInterface
         $this->clearMenuCache();
     }
 
-    public function hookCategoryUpdate($params)
+    public function hookActionCategoryUpdate($params)
     {
         $this->clearMenuCache();
     }
