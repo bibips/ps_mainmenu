@@ -24,5 +24,5 @@ if (!defined('_PS_VERSION_')) {
 function upgrade_module_2_3_2($module)
 {
     return Db::getInstance()->execute('ALTER TABLE `' . _DB_PREFIX_ . 'linksmenutop` CHARACTER SET = utf8mb4 COLLATE utf8mb4_general_ci;')
-      &&  Db::getInstance()->execute('ALTER TABLE `' . _DB_PREFIX_ . 'linksmenutop_lang` CHARACTER SET = utf8mb4 COLLATE utf8mb4_general_ci;');
+      && Db::getInstance()->execute('ALTER TABLE `' . _DB_PREFIX_ . 'linksmenutop_lang` CHARACTER SET = utf8mb4 COLLATE utf8mb4_general_ci;');
 }
